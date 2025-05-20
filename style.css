@@ -2,11 +2,54 @@
 
 :root{
     --color-primary-1: #fff5e4;
-    --color-primary-1: #f2c369;
-    --color-primary-1: #ffd700;
-    --color-primary-1: #b84226;
-    --color-primary-1: #8b5e3c;
+    --color-primary-2: #f2c369;
+    --color-primary-3: #ffd700;
+    --color-primary-4: #b84226;
+    --color-primary-5: #8b5e3c;
 
-    --color-primary-1: #ffffff;
-    --color-primary-1: #1a1a1a;
+    --color-primary-0: #ffffff;
+    --color-primary-: #1a1a1a;
 }
+
+/* reset do css padao do do navegador*/
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-primary-1);
+}
+
+section{
+    padding: 28px 8%;
+}
+
+/* header */
+    header {
+        width: 100%;
+        padding: 28px 8%;
+        position: sticky; /* define a barra de navegaçao  como fixa no topo da pagina */
+        top: 0;
+        background-color: var(--color-primary-1);
+        z-index: 3;
+    }
+
+    #navbar {
+        width: 100%;
+        display: flex;
+        background-color: aquamarine;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav_logo {
+        font-size: 24px;
+        color: #8b5e3c;
+    }
