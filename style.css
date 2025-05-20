@@ -7,8 +7,8 @@
     --color-primary-4: #b84226;
     --color-primary-5: #8b5e3c;
 
-    --color-primary-0: #ffffff;
-    --color-primary-: #1a1a1a;
+    --color-neutral-0: #ffffff;
+    --color-neutral-: #1a1a1a;
 }
 
 /* reset do css padao do do navegador*/
@@ -44,7 +44,6 @@ section{
     #navbar {
         width: 100%;
         display: flex;
-        background-color: aquamarine;
         align-items: center;
         justify-content: space-between;
     }
@@ -53,3 +52,40 @@ section{
         font-size: 24px;
         color: #8b5e3c;
     }
+
+    #nav_list {
+
+        display: flex;
+        gap: 48px;
+        list-style: none;
+    }
+
+.nav-item a {
+    text-decoration: none;
+    color: #1D1D1DAD;
+    font-weight: 600;
+}
+.nav-item.active a {
+    color: var(--color-neutral-);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color-primary-5);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color: var(--color-primary-2);
+    transition: background-color .3s ease;
+}
+
+
+.btn-default:hover {
+    background-color: #ffd700;
+    color: var(--color-primary-5);
+}
