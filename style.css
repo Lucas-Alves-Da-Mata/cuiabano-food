@@ -8,7 +8,7 @@
     --color-primary-5: #8b5e3c;
 
     --color-neutral-0: #ffffff;
-    --color-neutral-: #1a1a1a;
+    --color-neutral-1: #1a1a1a;
 }
 
 /* reset do css padao do do navegador*/
@@ -188,4 +188,44 @@ section{
     height: auto;
     width: 600px;
     border-radius: 30px;
+}
+
+/*MENU*/
+#menu {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center ;
+    min-height: 100vh;
+}
+
+.section-title {
+    color: var(--color-primary-4);
+    font-size: 1.563rem;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    width: 25%;
+    padding: 25px;
+    border-radius: 20px;
+    gap: 18px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+    overflow: hidden;
 }
