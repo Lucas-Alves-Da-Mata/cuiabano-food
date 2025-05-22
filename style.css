@@ -119,7 +119,7 @@ section{
     font-size: 1.2rem;
 }
 
-#cta_buttuons {
+#cta_buttons {
     display: flex;
     gap: 24px;
 }
@@ -186,6 +186,6 @@ section{
 
 #banner img {
     height: auto;
-    width: 600px
-    border-radius 30px;
+    width: 600px;
+    border-radius: 30px;
 }
