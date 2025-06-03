@@ -392,6 +392,42 @@ header {
     object-fit: cover;
 }
 
+@media screen (max-width: 1170px) {
+    #testimoneals {
+        flex-direction: column;
+    }
+
+    #testimonials .section-subtitle {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #testimonial_dish {
+        display: none;
+    }
+
+    #testimonial_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #testimonials .section-subtitle {
+        font-size: 2rem;
+    }
+
+    #testimonials_content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+}
 /* Footer */
 footer {
     background-color: var(--color-primary-2);
