@@ -1,110 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
-    <!-- font awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Lib jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Lib ScroolReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
-    <title>cuiabanoa food</title>
+    <title>Cuiabano Food</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <!-- logo -->
-            <a href="#">
+            <!-- Logo -->
+            <a href="#home">
                 <i class="fa-solid fa-utensils" id="nav_logo">
-                    cuiabano food
+                    Cuiabano Food
                 </i>
             </a>
-            <!-- menu de navegaçao-->
+            <!-- Menu de navegação -->
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a href="#">inicio</a>
+                    <a href="#home">Início</a>
                 </li>
-                                <li class="nav-item">
-                    <a href="#">cardapio</a>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
                 </li>
-                                <li class="nav-item">
-                    <a href="#">avaliações</a>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
             <button class="btn-default">
-                peça aqui
+                Peça aqui
+            </button>
+            <!-- Menu mobile -->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
+        <!-- Menu para dispositivos moveis -->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                Peça aqui
+            </button>
+        </div>
     </header>
-    <!--conteudo principal da pagina web-->
+    <!-- Conteúdo principal da página web -->
     <main id="content">
-        <!--home-->
+        <!-- Home -->
         <section id="home">
             <div id="cta">
-                <h1 class="title">o sabor <span>pantanal</span> em cada tempero</h1>
+                <h1 class="title">O sabor do <span>Pantanal</span> em cada tempero</h1>
                 <p class="description">
-                    uma explosao de cuiaba no paladar!
+                    Uma explosão de Cuiabá no seu paladar!
                 </p>
                 <div id="cta_buttons">
                     <a href="#" class="btn btn-default">
-                        ver cardapio
+                        Ver Cardápio
                     </a>
-                    <a href="tel:+888888888" id="phone_button">
+                    <a href="tel:+5599999999999" id="phone_button">
                         <button class="btn-default">
                             <i class="fa-solid fa-phone"></i>
                         </button>
-                        (99)777-777
+                        (99) 9.9999-9999
                     </a>
                 </div>
-                <!--redes sociais-->
+                <!-- Redes Sociais -->
                 <div class="social-media-buttons">
                     <a 
-                        href="#"
+                        href="https://api.whatsapp.com/send?phone=5599999999999&text=Quero%20fazer%20um%20pedido!"
                         target="_blank"
                         rel="noopener no-referrer"
                     >
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                     <a 
-                        href="#"
-                        target="_blank"
+                        href="#" 
+                        target="_blank" 
                         rel="noopener no-referrer"
                     >
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a 
-                        href="#"
-                        target="_blank"
+                        href="#" 
+                        target="_blank" 
                         rel="noopener no-referrer"
                     >
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                 </div>
             </div>
-            <!-- baner do site -->
+            <!-- Banner do Site -->
             <div id="banner">
-                <img src="images/prato-do-dia.png" alt="imagem do prato do dia">
+                <img src="images/prato-do-dia.png" alt="Imagem do prato do dia">
             </div>
         </section>
-        <!-- menu  -->
+        <!-- Menu -->
         <section id="menu">
-            <h2 class="section-title">cardapio</h2>
-            <h3 secton-subtitle>nossos pratos especiais</h3>
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
             <div id="dishes">
-                <!-- card dish 1 -->
+                <!-- Card Dish 1 -->
                 <div class="dish">
                     <div class="dish-heart">
                         <i class="fa-solid fa-heart"></i>
                     </div>
                     <img 
                         src="images/carne-assada.png" 
-                        alt="imagem de carne assada" 
+                        alt="Imagem de carne assada" 
                         class="dish-image" 
                         height="250px"
                     >
-                    <h3 class="dish-title">carne assada</h3>
+                    <h3 class="dish-title">Carne Assada</h3>
                     <p class="dish-description">
-                        Carne Assada ao Forno com Alho e Ervas
-                        Peça de alcatra ou maminha marinada no alho, alecrim, tomilho, sal grosso e vinho tinto, assada lentamente até ficar macia e suculenta.
+                        Carne bovina de primeira, assada na perfeição para garantir suculência e sabor em cada garfada. Temperada com ervas
+                        aromáticas e finalizada na grelha para uma crosta dourada irresistível.
                     </p>
                     <div class="dish-rate">
                         <i class="fa-solid fa-star"></i>
@@ -112,29 +137,25 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(100000+)</span>
+                        <span>(500+)</span>
                     </div>
                     <div class="dish-price">
-                        <h4> r$ 799,90 </h4>
+                        <h4> R$ 89,90 </h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
                     </div>
-                </div><!-- fim do card 1 -->
-                <!-- card dish 2 -->
+                </div> <!-- Fim do Card Dish 1 -->
+                <!-- Card Dish 2 -->
                 <div class="dish">
                     <div class="dish-heart">
                         <i class="fa-solid fa-heart"></i>
                     </div>
-                    <img 
-                        src="images/costela.png" 
-                        alt="imagem de costela assada" 
-                        class="dish-image" 
-                        height="250px"
-                    >
-                    <h3 class="dish-title">costela assada</h3>
+                    <img src="images/costela.png" alt="Imagem de costela assada" class="dish-image" height="250px">
+                    <h3 class="dish-title">Costela Assada</h3>
                     <p class="dish-description">
-                        Suculenta e macia, nossa costela assada é preparada lentamente, realçando todo o sabor da carne. Temperada com um mix especial de ervas e especiarias, ela derrete na boca e conquista pelo aroma irresistível.
+                        Costela Assada – Costela selecionada, temperada com um blend exclusivo e assada lentamente até ficar suculenta e com
+                        crosta dourada. Uma homenagem ao churrasco tradicional, feita com dedicação e sabor irresistível.
                     </p>
                     <div class="dish-rate">
                         <i class="fa-solid fa-star"></i>
@@ -142,30 +163,25 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(100000+)</span>
+                        <span>(500+)</span>
                     </div>
                     <div class="dish-price">
-                        <h4> r$ 599,90 </h4>
+                        <h4> R$ 89,90 </h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
                     </div>
-                </div><!-- fim do card 2 -->
-                <!-- card dish 3 -->
+                </div> <!-- Fim do Card Dish 2 -->
+                <!-- Card Dish 3 -->
                 <div class="dish">
                     <div class="dish-heart">
                         <i class="fa-solid fa-heart"></i>
                     </div>
-                    <img 
-                        src="images/caldo-piranha.png" 
-                        alt="imagem de caldo de piranha" 
-                        class="dish-image" 
-                        height="250px"
-                    >
-                    <h3 class="dish-title">caldo de piranha</h3>
+                    <img src="images/caldo-piranha.png" alt="Imagem de carne assada" class="dish-image" height="250px">
+                    <h3 class="dish-title">Caldo de Piranha</h3>
                     <p class="dish-description">
-                        Tradição e sabor amazônico em cada colherada!
-Nosso caldo de piranha é preparado com ingredientes frescos e especiarias que realçam o sabor marcante do peixe.
+                        Caldo de Piranha – Especialidade cuiabana, feita com piranha e caldo artesanal de leite de coco, mandioca e temperos
+                        regionais. Uma sopa cremosa e cheia de tradição.
                     </p>
                     <div class="dish-rate">
                         <i class="fa-solid fa-star"></i>
@@ -173,29 +189,26 @@ Nosso caldo de piranha é preparado com ingredientes frescos e especiarias que r
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(100000+)</span>
+                        <span>(500+)</span>
                     </div>
                     <div class="dish-price">
-                        <h4> r$ 299,90 </h4>
+                        <h4> R$ 89,90 </h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
                     </div>
-                </div><!-- fim do card 3-->
-                                <!-- card dish 4 -->
+                </div> <!-- Fim do Card Dish 3 -->
+                <!-- Card Dish 4 -->
                 <div class="dish">
                     <div class="dish-heart">
                         <i class="fa-solid fa-heart"></i>
                     </div>
-                    <img 
-                        src="images/feijoada.png" 
-                        alt="imagem de fejoada" 
-                        class="dish-image" 
-                        height="250px"
-                    >
-                    <h3 class="dish-title"></h3>
+                    <img src="images/feijoada.png" alt="Imagem de carne assada" class="dish-image" height="250px">
+                    <h3 class="dish-title">Feijoada Pantaneira</h3>
                     <p class="dish-description">
-                        Um clássico da culinária brasileira! Preparada com feijão preto e uma seleção especial de carnes, a nossa feijoada é acompanhada de arroz branco, couve refogada, farofa e laranja fatiada.
+                        Feijoada Pantaneira – Feijão preto cozido com carnes selecionadas como charque, paio e linguiça artesanal, em uma
+                        receita que homenageia a tradição do interior do Brasil. Sabor intenso e autêntico, preparado com carinho e respeito à
+                        cultura regional.
                     </p>
                     <div class="dish-rate">
                         <i class="fa-solid fa-star"></i>
@@ -203,80 +216,109 @@ Nosso caldo de piranha é preparado com ingredientes frescos e especiarias que r
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(100000+)</span>
+                        <span>(500+)</span>
                     </div>
                     <div class="dish-price">
-                        <h4> r$ 399,90 </h4>
+                        <h4> R$ 89,90 </h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
                     </div>
-                </div><!-- fim do card 4 -->
+                </div> <!-- Fim do Card Dish 4 -->
             </div>
         </section>
-        <!--testimonials-->
+        <!-- Testimonials -->
         <section id="testimonials">
             <img 
                 src="images/ambiente-restaurante.png" 
-                alt="imagem do ambiente do restaurante cuiabano food"
+                alt="Imagem do ambiente do restaurante Cuiabano Food"
                 id="testimonial_dish"
             >
-            <div id="testimonial_content">
-                <h2 class="section-titlie">depoimentos</h2>
-                <h3 class="section-subtitle">o que os clientes falam sobre ns</h3>
-                <!-- feedbacks -->
+            <div id="testimonials_content">
+                <h2 class="section-title">Depoimentos</h2>
+                <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+                <!-- Feedbacks -->
                 <div id="feedbacks">
-                    <!-- feedbacks 1 -->
+                    <!-- Feedback 1 -->
                     <div class="feedback">
                         <img 
                             src="images/avatar.jpg" 
-                            alt="imagem de uma cliente mulher"
+                            alt="Imagem de uma cliente mulher"
                             class="feedback-avatar"
                         >
                         <div class="feedback-content">
                             <p>
-                                <strong> lele marcos </strong>
+                                <strong>Léticia Gabriele</strong>
                                 <span>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </span>
                             </p>
                             <p>
-                                Estive no Cuiabano Food com minha família no último sábado e gostaria de parabenizar toda a equipe pelo excelente atendimento e pela comida maravilhosa!
-Desde a recepção até o momento em que saímos, fomos muito bem tratados. O ambiente é acolhedor, limpo e com uma decoração que realmente valoriza a cultura cuiabana. Me senti em casa!
+                                Uma experiência incrível! O Cuiabano Food me surpreendeu com a autenticidade dos sabores. Provei a Feijoada Pantaneira e cada ingrediente mostrava o cuidado no preparo — o feijão bem cozido, as carnes de primeira e aquela farofa de dendê que não dá pra esquecer. Parabéns pela dedicação à nossa cultura!
                             </p>
                         </div>
-                    </div> <!-- fim do feedback 1 -->
-                                        <!-- feedbacks 2 -->
+                    </div> <!-- Fim do feedback 1 -->
+                    <!-- Feedback 2 -->
                     <div class="feedback">
-                        <img 
-                            src="images/avatar2.jpg" 
-                            alt="imagem de uma cliente mulher"
-                            class="feedback-avatar"
-                        >
+                        <img src="images/avatar2.jpg" alt="Imagem de um cliente homem" class="feedback-avatar">
                         <div class="feedback-content">
                             <p>
-                                <strong> vinicius </strong>
+                                <strong>Marcos Vinícius</strong>
                                 <span>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </span>
                             </p>
                             <p>
-                                Estive no Cuiabano Food com minha família Tive uma experiência excelente neste restaurante! O ambiente é acolhedor, com uma decoração charmosa e música ambiente na medida certa. O atendimento foi atencioso e rápido, e os pratos surpreenderam tanto pelo sabor quanto pela apresentação. Destaque para o prato principal, que estava perfeitamente temperado e muito bem servido. 
+                                Almocei no Cuiabano Food no final de semana e foi uma ótima descoberta! Provei a costela assada e estava simplesmente
+                                desmanchando — suculenta e com um tempero impecável. O caldo de piranha como entrada foi uma surpresa maravilhosa, bem
+                                diferente do que já havia experimentado. Já estou marcando minha próxima visita!
                             </p>
                         </div>
-                    </div> <!-- fim do feedback 2-->
+                    </div> <!-- Fim do feedback 2 -->
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <img src="images/ondulacao.svg" alt="Imagem ondulada de cor marrom">
+        <div id="footer_items">
+            <span id="copyright">
+                Copyright &copy; 2025 - Todos os direitos reservados - Cuiabano Food
+            </span>
+            <!-- Redes Sociais -->
+            <div class="social-media-buttons">
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5599999999999&text=Quero%20fazer%20um%20pedido!" target="_blank" 
+                    rel="noopener no-referrer"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a 
+                    href="#" 
+                    target="_blank" 
+                    rel="noopener no-referrer"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a 
+                    href="#" 
+                    target="_blank" 
+                    rel="noopener no-referrer"
+                >
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
