@@ -229,6 +229,25 @@ header {
     border-radius: 30px;
 }
 
+
+@media screen and (max-width: 1170px){
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #home,
+    #baneer,
+    #baneer img {
+        display: none;
+    }
+    
+    #cta {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* Menu */
 #menu {
     display: flex;
@@ -315,6 +334,27 @@ header {
     align-items: center;
     justify-content: center;
     gap: 48px;
+}
+
+@media screen and (max-width: 1170) {
+#dishes {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dish {
+    width: calc(50% - 12px);
+}
+}
+
+@madia screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
 }
 
 #testimonial_dish {

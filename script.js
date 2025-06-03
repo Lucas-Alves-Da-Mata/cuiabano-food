@@ -33,30 +33,30 @@ $(document).ready(function () {
   });
 
   /** Animação */
-  ScrollReveal().reveal("#cta", {
+ScrollReveal().reveal("#cta", {
     origin: "left",
     duration: 2000,
     distance: "20%",
-  });
-  ScrollReveal().reveal("#banner", {
+});
+ScrollReveal().reveal("#banner", {
     origin: "right",
     duration: 2000,
     distance: "20%",
-  });
+});
 
-  ScrollReveal().reveal(".dish", {
+ScrollReveal().reveal(".dish", {
     origin: "left",
     duration: 2000,
     distance: "20%",
-  });
+});
 
-  ScrollReveal().reveal("#testimonial_dish", {
+ScrollReveal().reveal("#testimonial_dish", {
     origin: "left",
     duration: 2000,
     distance: "20%",
-  });
+});
 
-  ScrollReveal().reveal(".feedback", {
+ScrollReveal().reveal(".feedback", {
     origin: "right",
     duration: 2000,
     distance: "20%",
