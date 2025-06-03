@@ -1,96 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    --color-primary-1: #fff5e4;
-    --color-primary-2: #f2c369;
-    --color-primary-3: #ffd700;
-    --color-primary-4: #b84226;
-    --color-primary-5: #8b5e3c;
+:root {
+    --color-primary-1: #FFF5E4;
+    --color-primary-2: #F2C369;
+    --color-primary-3: #FFD700;
+    --color-primary-4: #B84226;
+    --color-primary-5: #8B5E3C;
 
-    --color-neutral-0: #ffffff;
-    --color-neutral-1: #1a1a1a;
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-1: #1A1A1A;
 }
 
-/* reset do css padao do do navegador*/
+/* Reset do CSS padrão do navegador */
 * {
-    margin:  0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--color-primary-1);
 }
 
-section{
+section {
     padding: 28px 8%;
 }
 
-/* header */
-    header {
-        width: 100%;
-        padding: 28px 8%;
-        position: sticky; /* define a barra de navegaçao  como fixa no topo da pagina */
-        top: 0;
-        background-color: var(--color-primary-1);
-        z-index: 3;
-    }
+/* Header */
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky; /* Define a barra de navegação como fixa no topo da página */
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3;
+}
 
-    #navbar {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    #nav_logo {
-        font-size: 24px;
-        color: #8b5e3c;
-    }
+#nav_logo {
+    font-size: 24px;
+    color: var(--color-primary-5);
+}
 
-    #nav_list {
-
-        display: flex;
-        gap: 48px;
-        list-style: none;
-    }
+#nav_list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
 
 .nav-item a {
     text-decoration: none;
     color: #1D1D1DAD;
     font-weight: 600;
 }
+
 .nav-item.active a {
-    color: var(--color-neutral-);
+    color: var(--color-neutral-1);
     border-bottom: 3px solid var(--color-primary-4);
 }
 
 .btn-default {
     border: none;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-color: var(--color-primary-5);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     color: var(--color-primary-2);
     transition: background-color .3s ease;
 }
 
-
 .btn-default:hover {
-    background-color: #ffd700;
+    background-color: var(--color-primary-3);
     color: var(--color-primary-5);
 }
 
-/* home */
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #navbar,
+    #nav_list .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu .active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+/* Home */
 #home {
     display: flex;
     align-items: center;
@@ -108,11 +147,11 @@ section{
 
 #cta .title {
     font-size: 4rem;
-    color: var(--color-neutral-);
+    color: var(--color-neutral-1);
 }
 
 #cta .title span {
-    color:var(--color-primary-4);
+    color: var(--color-primary-4);
 }
 
 #cta .description {
@@ -126,7 +165,7 @@ section{
 
 #cta_buttons a {
     text-decoration: none;
-    color: var(--color-neutral-);
+    color: var(--color-neutral-1);
 }
 
 #cta_buttons .btn {
@@ -136,7 +175,7 @@ section{
 
 #cta_buttons .btn:hover {
     background-color: var(--color-primary-3);
-    color: var(--color-neutral-);
+    color: var(--color-neutral-1);
 }
 
 #phone_button {
@@ -147,16 +186,16 @@ section{
     padding: 8px 14px;
     font-weight: 500;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 12px ;
+    border-radius: 12px;
 }
 
 #phone_button button {
-    box-shadow: none;
+    box-shadow: none
 }
 
 .social-media-buttons {
     display: flex;
-    gap: 18px;
+    gap: 18px
 }
 
 .social-media-buttons a {
@@ -169,7 +208,7 @@ section{
     font-size: 1.25rem;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--color-neutral-);
+    color: var(--color-neutral-1);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .3s ease;
 }
@@ -190,12 +229,12 @@ section{
     border-radius: 30px;
 }
 
-/*MENU*/
+/* Menu */
 #menu {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
 }
 
@@ -222,11 +261,11 @@ section{
     align-items: center;
     background-color: var(--color-neutral-0);
     width: 25%;
-    padding: 25px;
+    padding: 20px;
     border-radius: 20px;
     gap: 18px;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    position:relative;
+    position: relative;
     overflow: hidden;
 }
 
@@ -245,7 +284,6 @@ section{
     border-radius: 0px 37.5px 0px 42.5px;
 }
 
-
 .dish-image {
     width: 100%;
     border-radius: 20px;
@@ -259,6 +297,7 @@ section{
     color: var(--color-neutral-1);
     text-align: center;
 }
+
 .dish-rate i {
     color: var(--color-primary-4);
 }
@@ -269,7 +308,7 @@ section{
     gap: 20px;
 }
 
-/* testimonials */
+/* testimonials  */
 #testimonials {
     min-width: calc(100vh - 91px);
     display: flex;
@@ -284,13 +323,13 @@ section{
     border-radius: 30px;
 }
 
-    #testimonial_content {
+#testimonials_content {
     width: 50%;
-    }
+}
 
 #feedbacks {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
     margin-top: 30px;
@@ -300,7 +339,7 @@ section{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color:var(--color-neutral-0) ;
+    background-color: var(--color-neutral-0);
     padding: 12px;
     border-radius: 12px;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
@@ -313,3 +352,23 @@ section{
     object-fit: cover;
 }
 
+/* Footer */
+footer {
+    background-color: var(--color-primary-2);
+}
+
+footer img {
+    width: 100%;
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+}
